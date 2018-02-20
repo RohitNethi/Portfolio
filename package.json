@@ -1,0 +1,23 @@
+{
+  "name": "rohitnethi",
+  "version": "1.0.0",
+  "description": "portfolio, rohit nethi",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass public/scss/main.scss public/css/styles.css -w ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rohit",
+    "nethi",
+    "portfolio",
+    "web",
+    "designer",
+    "developer"
+  ],
+  "author": "Rohit Nethi",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
