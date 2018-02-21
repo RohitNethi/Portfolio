@@ -1,0 +1,11 @@
+@keyframes changeColor{
+    100%{
+        background: $color-green; 
+    }
+}
+
+@keyframes changeOpacity{
+    100%{
+        opacity: 1;
+    }
+}

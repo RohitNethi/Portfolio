@@ -19,15 +19,11 @@
             a{
                 color: $color-primary-black;
                 
-            }
-
-            a:link,
-            a:hover{
-                text-decoration: none; 
-                color: $color-green;
-            }
-            &:hover{
-                // transform: scale(1.4);
+                &:hover,
+                &:active{
+                    text-decoration: none; 
+                    color: $color-green;
+                }
             }
         }
     }

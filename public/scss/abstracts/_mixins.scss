@@ -9,14 +9,34 @@
 
 @mixin image-bottom ($image){
   &_image-bottom{
-    position: fixed;
+    position: absolute;
     z-index: 1;
     bottom:0;
     right: 0;
-    width: 200px;
-    height: 200px;
+    width: 15rem;
+    height: 30rem;
     background-image: url($image);
     background-size: cover;
     background-position: bottom;
   }
+}
+
+@mixin project-image ($image){
+  background-image: linear-gradient(to right bottom,
+  rgba($color-dark-grey, 0.5),
+  rgba($color-dark-grey, 0.5)),
+  url($image);
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin skill-image ($image){
+  
+    width: 8rem;
+    height: 8rem;
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }

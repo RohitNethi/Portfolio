@@ -7,6 +7,7 @@
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -21,18 +22,17 @@
 
 <body>
 
-    <header class="header" id="header">
+    <header class="header" id="header" tabindex="1">
         
-        <!-- <nav class="navigation">
+        <nav class="navigation">
             <ul>
                 <li class="nav-item active"><a href="#header">Home</a></li> 
                 <li class="nav-item"><a href="#about">About</a></li> 
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
                 <li class="nav-item"><a href="#education">Education</a></li> 
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <li class="nav-item"><a href="#">Skills</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
             </ul>
-        </nav> -->
+        </nav>
         
        <div class="header_text-box">
             <h1 class="heading_primary">
@@ -54,7 +54,7 @@
 
 
     <main>
-        <section id="about">
+        <section id="about" tabindex="2">
             <div class="container">
                 <h2 class="heading_secondary">About</h2>  
                 
@@ -67,68 +67,98 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" tabindex="3">
             <div class="container">
                 <h2 class="heading_secondary">Projects</h2>
                 <div class="projects_content">
                     <div class="row">
                         <div class="col-md-6 col-lg-4 col-xs-12 col-sm-12">
-                            <div class="projects_content--item"Project1>
-                                
-                            </div>    
+                            <div class="projects_content--item" id="item_univsports"><a href="" class="btn btn-default">View on Github</a></div>    
+                            <span class="projects_content-project--heading">Universal Sports</span>
+                            <span class="projects_content-project--description">
+                                    A production level RESTful web application.
+                                    This web application was built on Node runtime using Express Framework.
+                            </span>
                         </div>
                         <div class="col-md-6 col-lg-4 col-xs-12 col-sm-12">
-                            <div class="projects_content--item"Project2>
-                            
+                            <div class="projects_content--item" id="item_nbad"><a href="" class="btn btn-default">View on Github</a></div>
+                            <span class="projects_content-project--heading">Kiraak Store</span>
+                            <span class="projects_content-project--description" ></span>       
                             </div>
-                        </div>
                         <div class="col-md-6 col-lg-4 col-xs-12 col-sm-12">
-                            <div class="projects_content--item"Project3>
-                            
+                            <div class="projects_content--item" id="item_yelp"><a href="" class="btn btn-default">View on Github</a></div>
+                            <span class="projects_content-project--heading">RESTful Web App</span>
+                            <span class="projects_content-project--description"></span>     
                             </div>
-                        </div>
                         <div class="col-md-6 col-lg-4 col-xs-12 col-sm-12">
-                            <div class="projects_content--item"Project6>
-                            
+                            <div class="projects_content--item" id="item_wellwishers"><a href="" class="btn btn-default">View on Github</a></div>
+                            <span class="projects_content-project--heading">Non-Profit Website</span>
+                            <span class="projects_content-project--description"></span>      
                             </div>
-                        </div>
                         <div class="col-md-6 col-lg-4 col-xs-12 col-sm-12">
-                            <div class="projects_content--item"Project5>
-                                
+                            <div class="projects_content--item" id="item_careertracker"><a href="" class="btn btn-default">View on Github</a></div>
+                            <span class="projects_content-project--heading">Career Tracker - Project Management</span>
+                            <span class="projects_content-project--description"></span>       
                             </div>
-                        </div>
                         <div class="col-md-6 col-lg-4 col-xs-12 col-sm-12">
-                            <div class="projects_content--item"Project6>
-                            
-                            </div
-                        ></div>
+                            <div class="projects_content--item" id="item_cibo"><a href="" class="btn btn-default">View on Github</a></div>
+                            <span class="projects_content-project--heading">Cibo - UI/UX Research</span>
+                            <span class="projects_content-project--description"></span>      
+                            </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills">
-                
+        <section id="skills" tabindex="4">
+            <div class="container">
+                <h2 class="heading_secondary">Skills</h2>
+                <div class="skills_content">
+                    <div class="row">
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--html"></div><span>HTML5</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--css"></div><span>CSS</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--javascript"></div><span>JavaScript</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--jquery"></div><span>JQuery</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--react"></div><span>React</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--redux"></div><span>Redux</span></div>
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--mongodb"></div><span>MongoDB</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--nodejs"></div><span>Node.js</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--express"></div><span>Express</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--java"></div><span>Java</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--mysql"></div><span>MySQL</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--git"></div><span>Git</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--bootstrap"></div><span>Bootstrap</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--sass"></div><span>SASS</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--d3"></div><span>D3.js</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--aws"></div><span>AWS</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--heroku"></div><span>Heroku</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--jasmine"></div><span>Jasmine</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--photoshop"></div><span>Photoshop</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--illustrator"></div><span>Illustrator</span></div> 
+                        <div class="col-6 col-md-2"><div class="skills_content-icon" id="icon--googleanalytics"></div><span>Google Analytics</span></div>   
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="education">
+        <section id="education" tabindex="5">
             <div class="container">
                 <h2 class="heading_secondary">Education</h2>  
                 
                 <div class="education_content">
                     <div class="row">
                         <div class="col-md-6 education_content--first">
-                            <span>Sept 2012 - May 2016</span>
-                            <span>Mahatma Gandhi Institute of Technology</span>
-                            <span>Bachelor's in Information technology</span>
-                            <span>GPA : 3.5/4.0</span>
-                        </div>
-
-                        <div class="col-md-6 education_content--second">
                             <span>Aug 2016 - Dec 2017</span>                                
                             <span>University of North Carolina at Charlotte</span>
                             <span>Master's in Information technology</span>
                             <span>GPA : 3.9/4.0</span>
+                        </div>
+
+                        <div class="col-md-6 education_content--second">
+                            <span>Sept 2012 - May 2016</span>
+                            <span>Mahatma Gandhi Institute of Technology</span>
+                            <span>Bachelor's in Information technology</span>
+                            <span>GPA : 3.5/4.0</span>
                         </div>
                     </div>
                 </div>
@@ -137,8 +167,12 @@
 
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_content">
+                
+            </div>
+        </div>
     </footer>
 
 </body>

@@ -54,19 +54,148 @@ section{
 
     .projects_content{
 
-        padding: 5rem;
-        &--item:nth-child(n){
+        padding: 4rem;
+        text-align: center;
+        
+        &--item{
             margin: 1rem;
             width: 99%;
-            height: 25rem;
-            background-color: $color-dark-grey;
+            height: 18rem;
+            // background-color: $color-dark-grey;
+            border-radius: 20px;
+
+            &:hover{
+                animation: changeOpacity 0.3s ease-in forwards;
+                cursor: pointer;
+            }
+            
+            .btn-default{
+                margin: 7.5rem auto;
+                padding: 1rem;
+                background-color: $color-primary-black;
+                color: $color-white;
+            }
+
+            a:hover,
+            a:active{
+                color: $color-primary-black;
+                animation: changeColor 0.4s ease-in forwards;
+            }
         }
+        #item {
+            
+                &_univsports{
+                    @include project-image('../images/univsports.png');
+                }
+                &_nbad{
+                    @include project-image('../images/nbad.png');
+                }
+                &_yelp{
+                    @include project-image('../images/yelp.png');
+                }
+                &_wellwishers{
+                    @include project-image('../images/wellwishers.png');
+                }
+                &_careertracker{
+                    @include project-image('../images/careertracker.png');
+                }
+                &_cibo{
+                    @include project-image('../images/cibo.png');
+                }
+            }
+
+            &-project--description{
+                display: block;
+                margin-bottom: 2rem;
+            }
+
     }
 }
 
 #skills{
-
+    background-color: #efefef;
+    
     .skills_content{
+        text-align: center;
 
+        &-icon{
+            margin: 0 auto;
+        }
+
+        #icon{
+            &--html{
+                @include skill-image('../images/skills/html5.png');
+            }
+            &--css{
+                @include skill-image('../images/skills/css3.png');
+            }
+            &--javascript{
+                @include skill-image('../images/skills/js.png');
+            }
+            &--jquery{
+                @include skill-image('../images/skills/jquery.png');
+            }
+            &--react{
+                @include skill-image('../images/skills/react.png');
+            }
+            &--redux{
+                @include skill-image('../images/skills/redux.png');
+            }
+            &--photoshop{
+                @include skill-image('../images/skills/photoshop.jpg');
+            }
+            &--illustrator{
+                @include skill-image('../images/skills/illustrator.png');
+            }
+            &--jasmine{
+                @include skill-image('../images/skills/jasmine.png');
+            }
+            &--aws{
+                @include skill-image('../images/skills/aws.png');
+            }
+            &--heroku{
+                @include skill-image('../images/skills/heroku.png');
+            }
+            &--git{
+                @include skill-image('../images/skills/git.png');
+            }
+            &--bootstrap{
+                @include skill-image('../images/skills/bootstrap.png');
+            }
+            &--googleanalytics{
+                @include skill-image('../images/skills/googleanalytics.png');
+            }
+            &--nodejs{
+                @include skill-image('../images/skills/nodejs.png');
+            }
+            &--sass{
+                @include skill-image('../images/skills/sass.png');
+            }
+            &--express{
+                @include skill-image('../images/skills/expressjs.png');
+            }
+            &--mysql{
+                @include skill-image('../images/skills/mysql.png');
+            }
+            &--java{
+                @include skill-image('../images/skills/java.png');
+            }
+            &--mongodb{
+                @include skill-image('../images/skills/mongodb.png');
+            }
+            &--d3{
+                @include skill-image('../images/skills/d3.png');
+            }
+           
+        }
+
+        span {
+            display: block;
+            margin-bottom: 4rem;
+        }
     }
+}
+
+#footer{
+    background-color: #efefef;    
 }
