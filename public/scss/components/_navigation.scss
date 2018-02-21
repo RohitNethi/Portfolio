@@ -1,0 +1,34 @@
+
+.navigation{
+
+    position: fixed;
+    margin-top: 25vh;
+    z-index:1;
+    
+    ul{
+        list-style: none;
+
+        .nav-item{
+            padding: 1.2rem;
+            margin: 1.2rem;
+            line-height: 150%;
+            letter-spacing: 0.3rem;
+            font-weight: 300;
+
+
+            a{
+                color: $color-primary-black;
+                
+            }
+
+            a:link,
+            a:hover{
+                text-decoration: none; 
+                color: $color-green;
+            }
+            &:hover{
+                // transform: scale(1.4);
+            }
+        }
+    }
+}

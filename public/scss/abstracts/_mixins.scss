@@ -6,3 +6,17 @@
     clear: both;
   }
 }
+
+@mixin image-bottom ($image){
+  &_image-bottom{
+    position: fixed;
+    z-index: 1;
+    bottom:0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url($image);
+    background-size: cover;
+    background-position: bottom;
+  }
+}

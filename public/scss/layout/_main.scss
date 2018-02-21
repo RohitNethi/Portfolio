@@ -1,0 +1,72 @@
+section{
+    position:relative;
+}
+
+.header{
+    height: 100vh;
+    position: relative;
+
+    &_text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    @include image-bottom('../images/rohit-cropped.png');
+}
+
+#about{
+    background-color: #efefef;
+    .about_content{
+        width: 75%;
+        margin: 0 auto;
+        padding-bottom: 6rem;
+    }
+
+    
+}
+
+#education{
+    
+    .education_content{
+        width:90%;
+        margin: 0 auto;
+        padding: 0.2rem;
+        
+        padding-bottom: 5rem;
+
+        span{
+            display: block; 
+        }
+        &--first{
+            padding: 2.5rem;
+        }
+        &--second{
+            padding: 2.5rem;
+        }
+
+    }
+     
+}
+
+#projects{
+
+    .projects_content{
+
+        padding: 5rem;
+        &--item:nth-child(n){
+            margin: 1rem;
+            width: 99%;
+            height: 25rem;
+            background-color: $color-dark-grey;
+        }
+    }
+}
+
+#skills{
+
+    .skills_content{
+
+    }
+}
