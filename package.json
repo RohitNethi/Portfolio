@@ -17,7 +17,7 @@
   ],
   "author": "Rohit Nethi",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "node-sass": "^4.7.2",
     "typed.js": "^2.0.6"
   }
