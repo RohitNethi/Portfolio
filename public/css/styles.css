@@ -193,7 +193,7 @@ section {
     #skills .skills_content #icon--html {
       width: 8rem;
       height: 8rem;
-      background-image: url("/images/skills/html5.png");
+      background-image: url("../images/skills/html5.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center; }
