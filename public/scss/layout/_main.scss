@@ -124,7 +124,7 @@ section{
 
         #icon{
             &--html{
-                @include skill-image('../images/Skills/html5.png');
+                @include skill-image('../images/skills/html5.png');
             }
             &--css{
                 @include skill-image('../images/skills/css3.png');
