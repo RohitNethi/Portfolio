@@ -4,6 +4,7 @@
   "description": "portfolio, rohit nethi",
   "main": "index.js",
   "scripts": {
+    "start": "npm start",
     "compile:sass": "node-sass -w public/scss/main.scss public/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
