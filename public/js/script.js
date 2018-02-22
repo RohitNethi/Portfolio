@@ -2,7 +2,7 @@
 $( document ).ready(function(){
 
     var options = {
-        strings: ["Designer.", "Developer."],
+        strings: ["Developer.", "Designer."],
         typeSpeed: 100,
         typeDelay: 1600,
         showCursor: false,
@@ -55,6 +55,15 @@ $('a[href*="#"]')
 
 $( '.skills_content-icon' ).each(function() {
   animationHover(this, 'bounce');
+});
+
+$('.navigation__link').on('click', function(){
+    $('.navigation__checkbox').prop("checked",false);
+    $('.navigation__nav').css('z-index',-10);
+});
+
+$('.navigation__button').on('click', function(){
+  $('.navigation__nav').css('z-index',1500);
 });
 
 });

@@ -2,14 +2,6 @@
     html{
         font-size: 55%;
     }
-    .header_image-bottom{
-        // display:none;
-    }
-    .education_content--first{
-        border-right: 0;
-        border-bottom: 0.2rem solid $color-green;
-        
-    }
   }
   
   @media screen and (max-width:600px){
@@ -17,7 +9,8 @@
         font-size: 40%;
     }
     .header_image-bottom{
-        // display:none;
+        width: 15rem;
+        height: 25rem;
     }
 
     .education_content--first{
