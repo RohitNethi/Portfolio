@@ -4,7 +4,7 @@
   "description": "portfolio, rohit nethi",
   "main": "index.js",
   "scripts": {
-    "start": "npm start",
+    "start": "node app.js",
     "compile:sass": "node-sass -w public/scss/main.scss public/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,7 @@
   "author": "Rohit Nethi",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "node-sass": "^4.7.2",
     "typed.js": "^2.0.6"
   }
